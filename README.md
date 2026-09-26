@@ -29,7 +29,7 @@ network-anomaly-detector/
 ├── .gitignore             # Excludes raw data, binaries, and local virtualenv
 ├── README.md              # Project documentation
 └── requirements.txt       # Project dependencies 
- 
+ ```
  ## 🛠️ Tech Stack
 
 * **Language:** Python 3.x
@@ -49,16 +49,19 @@ cd network-anomaly-detector
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt 
-```cmd
+```
 
-###2. Run the Full ML Pipeline
+### 2. Run the Full ML Pipeline
 Execute the modules sequentially to reproduce data preprocessing, training, and evaluation:
+```cmd
 python src/day1_exploration.py
 python src/day2_preprocessing.py
 python src/day3_scaling_selection.py
 python src/day4_model_training.py
 python src/day5_model_evaluation.py 
-
-###3. Real-Time Packet Inference
+```
+### 3. Real-Time Packet Inference
 Test the trained model with sample network vector inputs:
+```cmd
 python src/day6_inference.py
+```
